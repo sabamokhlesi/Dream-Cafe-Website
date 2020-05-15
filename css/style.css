@@ -210,8 +210,7 @@ body {
     color: inherit; }
     .footer-link p {
       padding: .5rem 0;
-      transition: all .3s;
-      justify-self: flex-start; }
+      transition: all .3s; }
       .footer-link p:hover {
         color: white;
         background-color: #ac9872; }
