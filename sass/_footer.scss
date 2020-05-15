@@ -1,0 +1,47 @@
+.footer{
+    grid-row: 8/9;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    width: 75%;
+    padding: 7rem 0;
+    border-top: 2px solid $color-grey-light-1;
+    &-link{
+        text-decoration: none;
+        transition: all .2s;
+        color: inherit;
+        p{
+            padding:.5rem 0; 
+            transition: all .3s;
+            justify-self: flex-start;
+            &:hover{
+                color: white;
+                background-color:$color-secondary;
+            }
+        }
+    }
+    &-legal{
+        flex:0 0 23%;
+        margin-right: 7rem;
+        img{height: 4rem; justify-self: flex-start;}
+        span{color: $color-secondary;}
+    }
+    &-logo-box{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        i{
+            font-size: 2rem;
+            padding: 2rem 0;
+        }
+    }
+    &-navs{
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-nav{
+    }
+}
