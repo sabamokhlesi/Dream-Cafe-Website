@@ -7,12 +7,19 @@
     justify-content: space-evenly;
     color: $color-grey-light-1;
     h2{color: inherit;}
+    @media only screen and (max-width:$bp-small){flex-direction: column; text-align: center;}
     &-img-box{
-        height: 100%;
+        flex: 0 0 35%;
         position: relative;
+        align-self: flex-end;
+        @media only screen and (max-width:$bp-medium) {flex: 0 0 40%;}
+        @media only screen and (max-width:$bp-small){flex:auto;}
     }
     &-img{
-        height: 100%;
+        width: 100%;
+        transform: translateY(.5rem);
+        @media only screen and (max-width:$bp-small){width: 55%;transform: translateY(3.5rem);}
+        @media only screen and (max-width:$bp-smaller) {width: 75%;}
         &-text{
             font-style: italic;
             position: absolute;
@@ -24,9 +31,12 @@
             padding: 3rem 4rem;
             box-shadow: $shadow-light;
             font-weight: 500;
+            @media only screen and (max-width:$bp-small){left: -7%;width: 30%;bottom: -22%;}
         }
     }
     &-text{
         width: 30%;
+        @media only screen and (max-width:$bp-medium) {width: 40%;}
+        @media only screen and (max-width:$bp-small){width: 90%; margin: 0 auto; padding: 4rem 0;}
     }
 }

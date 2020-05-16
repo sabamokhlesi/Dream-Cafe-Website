@@ -5,6 +5,7 @@
     grid-template: repeat(7, 4vw)/repeat(11, 1fr);
     gap: 3rem;
     transform: translateY(-10rem);
+    @media only screen and (max-width:$bp-small) {grid-template: repeat(7, 6vw)/repeat(11, 1fr); gap: 1.5rem; transform: translateY(-6rem);}
     &-img{
         width: 100%;
         height: 100%;
@@ -18,6 +19,7 @@
     &-text{
         font-style: italic;
         grid-area:6/9/8/11;
+        height: fit-content;
         color: $color-grey-light-1;
         background-color: rgba($color-primary,.85);
         padding: 3.5rem 3rem;
@@ -25,5 +27,8 @@
         font-weight: 500;
         transform: translateY(-2rem);
         box-shadow: $shadow-light;
+        @media only screen and (max-width:$bp-large) {grid-area:6/8/8/11;}
+        @media only screen and (max-width:$bp-medium) {padding: 1.5rem;grid-area:6/7/8/11;}
+        @media only screen and (max-width:$bp-smaller) {grid-area:5/7/8/11;}
     }
 }

@@ -8,20 +8,25 @@
     align-items: center;
     width: 60%;
     justify-self: center;
+    @media only screen and (max-width:$bp-large) {width: 80%;}
+    @media only screen and (max-width:$bp-medium) {width: 90%;}
     &-brands{
         display: flex;
         justify-content: space-between;
         width: 100%;
+        @media only screen and (max-width:$bp-small) {flex-wrap: wrap; width: 100%; justify-content: center;}
         &-img{
             filter: grayscale(40%) opacity(.4);
             height: 5rem;
-            padding: 3rem;
+            padding: 1.5rem;
+            @media only screen and (max-width:$bp-medium) {height: 4rem;}
         }
     }
     &-review{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media only screen and (max-width:$bp-small) {flex-direction: column;}
         &-box{
             display: flex;
             justify-content: space-between;
@@ -32,6 +37,7 @@
             box-shadow: $shadow-light;
             min-height:25rem;
             margin: 5rem 2rem;
+            @media only screen and (max-width:$bp-medium) {padding: 3rem;}
         }
         &-img{
             width: 6rem;
