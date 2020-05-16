@@ -60,10 +60,10 @@ body{
     line-height: 1.6;
     display: grid;
     grid-template-columns: 10rem repeat(10,1fr);
-    grid-template-rows: 10rem 65vh 65vh repeat(5,min-content);
+    grid-template-rows: 10rem repeat(2,70rem) repeat(5,min-content);
     @media only screen and (max-width:$bp-small) {
         grid-template-columns: 7rem repeat(10,1fr);
-        grid-template-rows: 7rem 65vh 65vh repeat(5,min-content);
+        grid-template-rows: 7rem repeat(2,68rem) repeat(5,min-content);
     }
 }
 
