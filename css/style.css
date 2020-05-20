@@ -303,12 +303,12 @@ body {
   display: grid;
   grid-template: repeat(7, 4vw)/repeat(11, 1fr);
   gap: 3rem;
-  transform: translateY(-10rem); }
+  margin-top: -10rem; }
   @media only screen and (max-width: 36.5em) {
     .gallery {
       grid-template: repeat(7, 6vw)/repeat(11, 1fr);
       gap: 1.5rem;
-      transform: translateY(-6rem); } }
+      margin-top: -6rem; } }
   .gallery-img {
     width: 100%;
     height: 100%;
@@ -493,8 +493,7 @@ body {
         grid-column: 2/9; } }
     @media only screen and (max-width: 25em) {
       .cta-img {
-        grid-column: 2/10;
-        transform: scale(1.25); } }
+        grid-column: 2/11; } }
     .cta-img img {
       width: 100%; }
   .cta-background {

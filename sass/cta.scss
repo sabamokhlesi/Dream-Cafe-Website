@@ -9,7 +9,7 @@
         grid-column: 2/7;
         @media only screen and (max-width:37em) {grid-column: 2/8;}
         @media only screen and (max-width:30em) {grid-column: 2/9;}
-        @media only screen and (max-width:$bp-smaller) {grid-column: 2/10; transform: scale(1.25);}
+        @media only screen and (max-width:$bp-smaller) {grid-column: 2/11;}
         img{width: 100%; }
     }
     &-background{
