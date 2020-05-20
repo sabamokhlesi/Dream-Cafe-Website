@@ -58,3 +58,12 @@
     }
 }
 
+//fade-in
+.fade-in{
+    opacity: 0;
+}
+
+.fade-in.add-animation{
+    transition: opacity 1.5s ease-out;
+    opacity: 1;
+}

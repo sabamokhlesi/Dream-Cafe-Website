@@ -46,6 +46,7 @@ $shadow-dark:0 1rem 4rem rgba(255, 255, 255, 0.349);
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
     @media only screen and (max-width:$bp-largest) {font-size: 55%;}
     @media only screen and (max-width:$bp-large) {font-size: 50%;}
 }
@@ -164,5 +165,7 @@ body{
     background-color: $color-secondary;
     color: white;
     cursor: pointer;
+    text-decoration: none;
+    border: 0;
 }
 

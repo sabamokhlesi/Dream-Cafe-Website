@@ -1,35 +1,59 @@
 .gallery{
+    height: 36vw;
     grid-row: 6/7;
     grid-column: 1/-1;
-    display: grid;
-    grid-template: repeat(7, 4vw)/repeat(11, 1fr);
-    gap: 3rem;
-    // transform: translateY(-10rem);
-    margin-top: -10rem;
-    @media only screen and (max-width:$bp-small) {grid-template: repeat(7, 6vw)/repeat(11, 1fr); gap: 1.5rem; margin-top: -6rem;;}
-    &-img{
-        width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-6rem);
+    margin-bottom: 12rem;
+    @media only screen and (max-width:$bp-small) { height: 40vw;transform: translateY(-3rem); margin-bottom: 6rem;}
+    &-group{
         height: 100%;
-        object-fit: cover;
-        
-        &-1{ grid-area:1/1/4/4;}
-        &-2{ grid-area:4/1/7/4;}
-        &-3{ grid-area: 1/4/7/7;}
-        &-4{ grid-area: 1/7/7/12;}
+        &-first{
+            flex: 0 0 26%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &-img{
+                height: 46%;
+                width: 100%;
+                // object-fit: cover;
+            }
+        }
+        &-second{
+            flex: 0 0 23%;
+            img{
+                width: 100%; 
+                height: 100%; 
+                // object-fit: cover;
+            }
+        }
+        &-last{
+            flex: 0 0 46%;
+            position: relative;
+            img{
+                width: 100%; 
+                height: 100%; 
+                // object-fit: cover;
+            }
+        }
     }
     &-text{
         font-style: italic;
-        grid-area:6/9/8/11;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30%;
+        margin-bottom: -4rem;
+        margin-left: 5%;
         height: fit-content;
         color: $color-grey-light-1;
         background-color: rgba($color-primary,.85);
         padding: 3.5rem 3rem;
         box-shadow: $shadow-light;
         font-weight: 500;
-        transform: translateY(-2rem);
         box-shadow: $shadow-light;
-        @media only screen and (max-width:$bp-large) {grid-area:6/8/8/11;}
-        @media only screen and (max-width:$bp-medium) {padding: 1.5rem;grid-area:6/7/8/11;}
-        @media only screen and (max-width:$bp-smaller) {grid-area:5/7/8/11;}
+        @media only screen and (max-width:$bp-medium) { width: 70%;}
+        @media only screen and (max-width:$bp-small) { padding: 1rem; margin-bottom: -5rem; font-size: 1.3rem;}
     }
 }

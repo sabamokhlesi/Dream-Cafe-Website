@@ -27,16 +27,16 @@
     <section class="top-nav">
         <h2 class="top-nav-logo">Dream Cafe</h2>
         <ul class="top-nav-list">
-            <li class="top-nav-item"><a href="#" class="btn btn-primary">Home</a></li>
-            <li class="top-nav-item"><a href="#" class="btn btn-primary">About</a></li>
-            <li class="top-nav-item"><a href="#" class="btn btn-primary">Services</a></li>
-            <li class="top-nav-item"><a href="#" class="btn btn-primary">Contact</a></li>
-            <li class="top-nav-item"><a href="#" class="btn btn-secondary">Reservation</a></li>
+            <li class="top-nav-item"><a href="#clients" class="btn btn-primary">Partners</a></li>
+            <li class="top-nav-item"><a href="#story" class="btn btn-primary">About</a></li>
+            <li class="top-nav-item"><a href="#menu" class="btn btn-primary">Services</a></li>
+            <li class="top-nav-item"><a href="#footer" class="btn btn-primary">Contact</a></li>
+            <li class="top-nav-item"><a href="#cta" class="btn btn-secondary">Reservation</a></li>
         </ul>
     </section>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header-img-box move-in-left">
-            <span class="img-span">&darr;</span>
+            <a href="#story" class="img-span">&darr;</a>
         </div>
         <div class="header-text">
             <p class="header-text-top">Your Dream Cafe...</p>
@@ -44,7 +44,7 @@
             <p class="move-in-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officiis ratione necessitatibus magni eos ut excepturi porro esse est soluta.</p>
         </div>
     </header>
-    <section class="story">
+    <section class="story" id="story">
         <div class="story-text move-in-up">
             <h2 class="heading-2">Quality Is Our First Priority</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tenetur animi dolore! Optio dicta delectu.</p><br>
@@ -55,7 +55,7 @@
             <div class="story-img-text">" Lorem ipsum, dolor sit ametor consectetur adipisicing elit."</div>
         </div>
     </section>
-    <section class="menu">
+    <section class="menu" id="menu">
         <div class="menu-text move-in-left">
             <h2 class="heading-2">Enjoy A veriety Of Hot Beverages Here</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eaque quod! Odit incidunt accusantium in.</p>
@@ -83,7 +83,7 @@
             </div>
         </div>
     </section>
-    <section class="cta ">
+    <section class="cta " id="cta">
         <div class="cta-background"></div>
         <div class="cta-img move-in-left">
             <img src="./img/cta-2.jpg" alt="cta img">
@@ -108,14 +108,20 @@
             <a href="#" class="btn btn-secondary">Book Now &rarr;</a>
         </div>
     </section>
-    <section class="gallery move-in-up">
-        <img src="./img/gallery-1.jpg" alt="gallery 1" class="gallery-img gallery-img-1">
-        <img src="./img/gallery-2.jpg" alt="gallery 2" class="gallery-img gallery-img-2">
-        <img src="./img/gallery-3.jpg" alt="gallery 3" class="gallery-img gallery-img-3">
-        <img src="./img/gallery-4.jpg" alt="gallery 4" class="gallery-img gallery-img-4">
-        <div class="gallery-text">" Lorem ipsum, dolor sit ametor consectetur adipisicing elit."</div>
+    <section class="gallery" id="gallery">
+        <div class="gallery-group-first move-in-left">
+            <img src="./img/gallery-1.jpg" alt="gallery 1" class="gallery-group-first-img">
+            <img src="./img/gallery-2.jpg" alt="gallery 2" class="gallery-group-first-img">
+        </div>
+        <div class="gallery-group-second move-in-up">
+            <img src="./img/gallery-3.jpg" alt="gallery 3">
+        </div>
+        <div class="gallery-group-last move-in-right">
+            <img src="./img/gallery-4.jpg" alt="gallery 4" >
+            <div class="gallery-text">" Lorem ipsum, dolor sit ametor consectetur adipisicing elit."</div>
+        </div>
     </section>
-    <section class="clients">
+    <section class="clients" id="clients">
         <h2 class="heading-2 move-in-left">Who Works With Us</h2>
         <div class="clients-brands move-in-right">
             <img src="./img/brand-1.png" alt="brand-1" class="clients-brands-img">
@@ -147,7 +153,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-legal">
             <img src="./img/logo.png" alt="logo">
             <p>&copy; Copyright All Rights Reserved For <span>Saba Mokhlesi</span> 2020.</p>
@@ -173,9 +179,9 @@
             </div>
             <div class="footer-nav">
                 <h4>Services</h4>
-                <a href="#" class="footer-link"><p>Meeting Rooms</p></a>
-                <a href="#" class="footer-link"><p>Reserve A table</p></a>
-                <a href="#" class="footer-link"><p>Take out order</p></a> 
+                <a href="#cta" class="footer-link"><p>Meeting Rooms</p></a>
+                <a href="#cta" class="footer-link"><p>Reserve A table</p></a>
+                <a href="#menu" class="footer-link"><p>Take out order</p></a> 
             </div>
         </div>
     </footer>
